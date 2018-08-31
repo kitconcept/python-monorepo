@@ -1,9 +1,9 @@
 import setuptools
 
 setuptools.setup(
-    name="mypackage.core",
+    name="mypackage_theme",
     version="1.0.0",
-    url="https://github.com/kitconcept",
+    url="https://github.com/borntyping/cookiecutter-pypackage-minimal",
 
     author="Timo Stollenwerk",
     author_email="stollenwerk@kitconcept.com",

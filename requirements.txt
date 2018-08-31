@@ -1,2 +1,2 @@
--e src/mypackage.core
--e src/mypackage.theme
+-e src/mypackage_core
+-e src/mypackage_theme

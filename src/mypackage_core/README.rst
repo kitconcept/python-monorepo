@@ -1,8 +1,8 @@
-mypackage.theme
-===============
+mypackage_core
+==============
 
-.. image:: https://img.shields.io/pypi/v/mypackage.theme.svg
-    :target: https://pypi.python.org/pypi/mypackage.theme
+.. image:: https://img.shields.io/pypi/v/mypackage_core.svg
+    :target: https://pypi.python.org/pypi/mypackage_core
     :alt: Latest PyPI version
 
 .. image:: https://travis-ci.org/borntyping/cookiecutter-pypackage-minimal.png
@@ -29,4 +29,4 @@ Licence
 Authors
 -------
 
-`mypackage.theme` was written by `Timo Stollenwerk <stollenwerk@kitconcept.com>`_.
+`mypackage_core` was written by `Timo Stollenwerk <stollenwerk@kitconcept.com>`_.

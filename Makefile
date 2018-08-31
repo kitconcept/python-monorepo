@@ -6,17 +6,12 @@ all: clean build
 
 clean:
 	@echo "Clean"
-	rm -rf bin include lib
+	rm -rf bin include lib develop .Python
 
 build:
 	@echo "Build"
 	virtualenv -p python3 .
 	bin/pip install -r requirements.txt
-	bin/python setup.py develop
-	bin/pip install . --no-dependencies
-	bin/pip install -q flake8
-	bin/pip install -q psycopg2
-	bin/pip install Django==${DJANGO_VERSION}
 
 test:
 	@echo "Run Tests"
