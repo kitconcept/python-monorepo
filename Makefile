@@ -21,8 +21,7 @@ checkout:
 	(cd develop && git clone https://github.com/kitconcept/python-monorepo mypackage_core)
 	(cd develop/mypackage_core && echo "src/mypackage_core" >> .git/info/sparse-checkout)
 	(cd develop/mypackage_core && git config core.sparsecheckout true)
-	(cd develop/mypackage_core && git read-tree -mu HEAD)
-	# (cd develop/mypackage_core && git read-tree -m -u HEAD)
+	(cd develop/mypackage_core && git read-tree -m -u HEAD)
 	ls develop/mypackage_core/src
 
 test:
