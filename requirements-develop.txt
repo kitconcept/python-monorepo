@@ -1,0 +1,2 @@
+-e develop/mypackage_core/src/mypackage_core
+-e src/mypackage_theme
