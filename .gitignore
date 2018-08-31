@@ -2,4 +2,5 @@
 bin/
 include/
 lib/
+.pytest_cache
 pip-selfcheck.json
