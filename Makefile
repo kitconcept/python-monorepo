@@ -13,6 +13,18 @@ build:
 	virtualenv -p python3 .
 	bin/pip install -r requirements.txt
 
+checkout:
+	@echo "Checkout"
+	git config core.sparsecheckout true
+	rm -rf develop
+	mkdir develop
+	(cd develop && git clone https://github.com/kitconcept/python-monorepo mypackage_core)
+	(cd develop/mypackage_core && echo "src/mypackage_core" >> .git/info/sparse-checkout)
+	(cd develop/mypackage_core && git config core.sparsecheckout true)
+	(cd develop/mypackage_core && git read-tree -mu HEAD)
+	# (cd develop/mypackage_core && git read-tree -m -u HEAD)
+	ls develop/mypackage_core/src
+
 test:
 	@echo "Run Tests"
 	bin/pybot DjangoLibrary
