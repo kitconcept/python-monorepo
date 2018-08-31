@@ -23,6 +23,7 @@ checkout:
 	(cd develop/mypackage_core && git config core.sparsecheckout true)
 	(cd develop/mypackage_core && git read-tree -m -u HEAD)
 	ls develop/mypackage_core/src
+	(cd develop/mypackage_core && git checkout b639aff6615df7e33ffa53bcdfb1b9fd131c189e)
 
 test:
 	@echo "Run Tests"
