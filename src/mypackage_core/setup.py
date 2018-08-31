@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="mypackage_core",
-    version="1.0.0",
+    version="1.2.0",
     url="https://github.com/borntyping/cookiecutter-pypackage-minimal",
 
     author="Timo Stollenwerk",
