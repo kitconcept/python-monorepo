@@ -9,3 +9,4 @@ script:
   - py.test src/mypackage_core
   - py.test src/mypackage_theme
   - make checkout
+  - pip install -r requirements-develop.txt
